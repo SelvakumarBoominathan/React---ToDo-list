@@ -12,10 +12,19 @@
 }
 
 .Input-Form>* {
-  margin: 3px;
+  margin: 5px;
+  border: green solid 3px;
+  min-width: 300px;
+  height: 30px
 }
 
 .Title-Name {
   min-width: 100%;
   margin: 10px;
+  color: rgb(2, 107, 2);
+}
+
+#Add-button {
+  background-color: rgb(3, 182, 3);
+  min-width: 150px;
 }

@@ -8,7 +8,7 @@ const InputsBar = () => {
       <form className='Input-Form'>
         <input type='text' placeholder='Enter task Name'></input>
         <input type='text' placeholder='Enter Description'></input>
-        <button>Add to list</button>
+        <button id='Add-button'>Add to list</button>
       </form>
     </div>
   )
