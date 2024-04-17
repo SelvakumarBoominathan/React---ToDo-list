@@ -1,0 +1,10 @@
+.parent-container {
+  display: flex;
+
+}
+
+.card-parent {
+  background-color: rgb(107, 246, 246);
+  padding: 10px;
+  margin: 0 auto;
+}

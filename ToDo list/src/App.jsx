@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import InputsBar from './components/InputsBar/InputsBar';
+import Body from './components/Body/Body';
 
 
 function App() {
@@ -9,6 +10,10 @@ function App() {
   return (
     <>
       <InputsBar />
+      <Body />
+      <Body />
+      <Body />
+
     </>
   )
 }

@@ -15,3 +15,4 @@ const InputsBar = () => {
 }
 
 export default InputsBar;
+// 
