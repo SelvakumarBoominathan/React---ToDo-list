@@ -1,0 +1,21 @@
+.Header-container {
+  min-width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.Input-Form {
+  margin: 10px;
+  min-width: 100%;
+}
+
+.Input-Form>* {
+  margin: 3px;
+}
+
+.Title-Name {
+  min-width: 100%;
+  margin: 10px;
+}
