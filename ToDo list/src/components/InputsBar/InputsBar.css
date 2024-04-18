@@ -9,6 +9,7 @@
 .Input-Form {
   margin: 10px;
   min-width: 100%;
+  margin-bottom: 40px;
 }
 
 .Input-Form>* {
