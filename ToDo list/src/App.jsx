@@ -7,13 +7,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [tasks, setTasks] = useState([]);
+
+  const handleAddTask = (newTask) => {
+    setTasks([...tasks, newTask]);
+  }
 
   return (
     <>
-      <InputsBar />
-      <Body />
-
+      <InputsBar onAddTask={handleAddTask} />
+      <Body tasks={tasks} />
     </>
   )
 }
