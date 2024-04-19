@@ -79,3 +79,90 @@ const Body = ({ tasks, onEditTask, onDeleteTask }) => {
 };
 
 export default Body;
+
+
+
+// import React, { useState } from 'react';
+// import Card from 'react-bootstrap/Card';
+// import Button from 'react-bootstrap/Button';
+// import "./Body.css";
+
+// const Body = ({ tasks, onEditTask, onDeleteTask }) => {
+//   const [selectedFilter, setSelectedFilter] = useState('All');
+
+//   if (!Array.isArray(tasks)) {
+//     console.error("Tasks is not an array:", tasks);
+//     return null; // or render an error message
+//   }
+
+//   const handleFilterSelect = (event) => {
+//     setSelectedFilter(event.target.value);
+//   };
+
+//   const handleEdit = (index) => {
+//     onEditTask(index);
+//   };
+
+//   const handleSubmitEdit = (index, updatedTask) => {
+//     const updatedTasks = [...tasks];
+//     updatedTasks[index] = updatedTask;
+//     onEditTask(updatedTasks);
+//   };
+
+//   const handleDelete = (index) => {
+//     onDeleteTask(index);
+//   };
+
+//   let filteredTasks = [];
+//   if (Array.isArray(tasks)) {
+//     filteredTasks = tasks.filter(task => {
+//       if (selectedFilter === 'All') {
+//         return true;
+//       } else if (selectedFilter === 'Completed') {
+//         return task.status === 'Completed';
+//       } else if (selectedFilter === 'Not Completed') {
+//         return task.status === 'Not Completed';
+//       }
+//     });
+//   }
+
+//   return (
+//     <div className='parent-container'>
+//       <div className="filter-dropdown">
+//         <label htmlFor="filter-select">Filter: </label>
+//         <select id="filter-select" value={selectedFilter} onChange={handleFilterSelect}>
+//           <option value="All">All</option>
+//           <option value="Completed">Completed</option>
+//           <option value="Not Completed">Not Completed</option>
+//         </select>
+//       </div>
+//       {filteredTasks.map((task, index) => (
+//         <Card key={index} style={{ width: '25rem', height: '20rem' }} className='card-parent'>
+//           <Card.Body className='body-container'>
+//             <Card.Title>Name : {task.todoName}</Card.Title>
+//             <Card.Text>
+//               <span>Description : {task.description}</span>
+//             </Card.Text>
+//             <div className='Dorpdwn-container'>
+//               <span>Status :</span> <span>
+//                 <select value={task.status} onChange={(e) => {
+//                   const updatedTask = { ...task, status: e.target.value };
+//                   handleSubmitEdit(index, updatedTask);
+//                 }}>
+//                   <option value="Completed">Completed</option>
+//                   <option value="Not Completed">Not Completed</option>
+//                 </select>
+//               </span>
+//             </div>
+//             <div className='btn-container'>
+//               <Button variant="success" onClick={() => handleEdit(index)}>Edit</Button>{' '}
+//               <Button variant="danger" onClick={() => handleDelete(index)}>Delete</Button>{' '}
+//             </div>
+//           </Card.Body>
+//         </Card>
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default Body;
