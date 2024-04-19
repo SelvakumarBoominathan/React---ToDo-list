@@ -1,5 +1,6 @@
 import React from 'react';
 import "./InputsBar.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const InputsBar = () => {
   return (
@@ -15,4 +16,3 @@ const InputsBar = () => {
 }
 
 export default InputsBar;
-// 

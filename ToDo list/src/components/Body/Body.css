@@ -1,10 +1,26 @@
 .parent-container {
   display: flex;
-
 }
 
 .card-parent {
   background-color: rgb(107, 246, 246);
   padding: 10px;
   margin: 0 auto;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-self: end;
+  gap: 8px;
+}
+
+.body-container {
+  display: grid;
+}
+
+.Dorpdwn-container {
+  display: flex;
+  gap: 10px
 }
