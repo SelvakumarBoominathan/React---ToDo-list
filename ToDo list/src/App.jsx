@@ -21,10 +21,11 @@ function App() {
   };
 
   return (
-    <>
+    <div style={{ fontFamily: 'Oswald, sans-serif' }}>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" />
       <InputsBar onAddTask={handleAddTask} />
       <Body tasks={tasks} onEditTask={handleEditTask} onDeleteTask={handleDeleteTask} />
-    </>
+    </div>
   );
 }
 

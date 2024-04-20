@@ -69,43 +69,46 @@ const Body = ({ tasks, onEditTask, onDeleteTask }) => {
   });
 
   return (
-    <div className='parent-container'>
+
+    <>
       <div className="filter-dropdown">
-        <label htmlFor="filter-select">Filter: </label>
+        <label className='Filter-select' htmlFor="filter-select" style={{ fontFamily: 'Oswald, sans-serif' }} >Filter:  </label>
         <select id="filter-select" value={filterOption} onChange={(e) => handleFilterChange(e.target.value)}>
-          <option value="All">All</option>
-          <option value="Completed">Completed</option>
-          <option value="Not Completed">Not Completed</option>
+          <option value="All"  >All</option>
+          <option value="Completed"  >Completed</option>
+          <option value="Not Completed"  >Not Completed</option>
         </select>
       </div>
-      {filteredTasks.map((task, index) => (
-        <Card key={index} style={{ width: '25rem', height: '20rem' }} className='card-parent'>
-          <Card.Body className='body-container'>
-            <Card.Title>Name : {editIndex === index ? <input type="text" value={editTaskName} onChange={(e) => setEditTaskName(e.target.value)} /> : task.todoName}</Card.Title>
-            <Card.Text>
-              <span>Description : {editIndex === index ? <input type="text" value={editDescription} onChange={(e) => setEditDescription(e.target.value)} /> : task.description}</span>
-            </Card.Text>
-            <div className='Dorpdwn-container'>
-              <span>Status :</span> <span>
-                <select value={taskStatuses[index] || 'Not Completed'} onChange={(e) => handleStatusChange(index, e.target.value)}>
-                  <option value="Completed">Completed</option>
-                  <option value="Not Completed">Not Completed</option>
-                </select>
-              </span>
-            </div>
-            <div className='btn-container'>
-              {editIndex === index ? (
-                <Button variant="primary" onClick={handleSaveEdit}>Save</Button>
-              ) : (
-                <Button variant="success" onClick={() => handleEdit(index)}>Edit</Button>
-              )}
-              {' '}
-              <Button variant="danger" onClick={() => handleDelete(index)}>Delete</Button>{' '}
-            </div>
-          </Card.Body>
-        </Card>
-      ))}
-    </div>
+      <div className='parent-container'>
+        {filteredTasks.map((task, index) => (
+          <Card key={index} style={{ width: '25rem', height: '20rem' }} className='card-parent'>
+            <Card.Body className='body-container'>
+              <Card.Title  >Name : {editIndex === index ? <input type="text" value={editTaskName} onChange={(e) => setEditTaskName(e.target.value)} /> : task.todoName}</Card.Title>
+              <Card.Text>
+                <span  >Description : {editIndex === index ? <input type="text" value={editDescription} onChange={(e) => setEditDescription(e.target.value)} /> : task.description}</span>
+              </Card.Text>
+              <div className='Dorpdwn-container'>
+                <span  >Status :</span> <span>
+                  <select style={{ fontFamily: 'Oswald, sans-serif', backgroundColor: 'lightblue' }} value={taskStatuses[index] || 'Not Completed'} onChange={(e) => handleStatusChange(index, e.target.value)}>
+                    <option value="Completed"  >Completed</option>
+                    <option value="Not Completed"  >Not Completed</option>
+                  </select>
+                </span>
+              </div>
+              <div className='btn-container'>
+                {editIndex === index ? (
+                  <Button variant="primary" onClick={handleSaveEdit}>Save</Button>
+                ) : (
+                  <Button variant="success" onClick={() => handleEdit(index)}  >Edit</Button>
+                )}
+                {' '}
+                <Button variant="danger" onClick={() => handleDelete(index)} >Delete</Button>{' '}
+              </div>
+            </Card.Body>
+          </Card>
+        ))}
+      </div>
+    </>
   );
 };
 

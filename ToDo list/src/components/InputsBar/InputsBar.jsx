@@ -17,11 +17,11 @@ const InputsBar = ({ onAddTask }) => {
 
   return (
     <div className='Header-container'>
-      <h3 className='Title-Name'>My ToDo</h3>
+      <h3 className='Title-Name'  >My ToDo</h3>
       <form className='Input-Form' onSubmit={handleSubmit}>
         <input type='text' placeholder='Enter task Name' value={todoName} onChange={(e) => settodoName(e.target.value)}></input>
         <input type='text' placeholder='Enter Description' value={description} onChange={(e) => setDescription(e.target.value)}></input>
-        <button id='Add-button'>Add to list</button>
+        <button id='Add-button' style={{ fontFamily: 'Oswald, sans-serif' }} >Add to list</button>
       </form>
     </div>
   )
