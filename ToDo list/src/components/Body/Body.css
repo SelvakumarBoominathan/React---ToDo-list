@@ -40,3 +40,8 @@
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+#filter-select {
+  background-color: lightblue;
+  border-radius: 5px;
+}
