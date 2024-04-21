@@ -81,7 +81,7 @@ const Body = ({ tasks, onEditTask, onDeleteTask }) => {
       </div>
       <div className='parent-container'>
         {filteredTasks.map((task, index) => (
-          <Card key={index} style={{ width: '25rem', height: '20rem' }} className='card-parent'>
+          <Card key={index} id='card-parent'>
             <Card.Body className='body-container'>
               <Card.Title  >Name : {editIndex === index ? <input type="text" value={editTaskName} onChange={(e) => setEditTaskName(e.target.value)} /> : task.todoName}</Card.Title>
               <Card.Text>
