@@ -72,3 +72,73 @@
     font-size: smaller;
   }
 }
+
+@media screen and (min-width: 700px) and (max-width: 1020px) {
+  .parent-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-width: 100%;
+  }
+
+  .drop-Down {
+    font-size: x-small;
+  }
+
+  #card-parent {
+    width: 270px;
+    height: 200px;
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    width: 25%;
+    font-size: smaller;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .parent-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 100%;
+  }
+
+  .drop-Down {
+    font-size: smaller;
+  }
+
+  #card-parent {
+    width: 270px;
+    height: 200px;
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    width: 25%;
+    font-size: smaller;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .parent-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 100%;
+  }
+
+  .drop-Down {
+    font-size: 1rem;
+  }
+
+  #card-parent {
+    width: 330px;
+    height: 230px;
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 25%;
+    font-size: smaller;
+  }
+}
