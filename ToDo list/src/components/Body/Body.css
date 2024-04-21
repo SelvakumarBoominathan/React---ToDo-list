@@ -36,6 +36,7 @@
 
 .filter-dropdown {
   background-color: #555555;
+  font-size: 1em;
 }
 
 .Filter-select {
@@ -44,8 +45,16 @@
 }
 
 #filter-select {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   border-radius: 5px;
+}
+
+.completed-task {
+  background-color: lightgreen;
+}
+
+.not-completed-task {
+  background-color: lightcoral;
 }
 
 
@@ -80,9 +89,9 @@
     min-width: 100%;
   }
 
-  .drop-Down {
+  /* .drop-Down {
     font-size: x-small;
-  }
+  } */
 
   #card-parent {
     width: 270px;
@@ -104,9 +113,9 @@
     min-width: 100%;
   }
 
-  .drop-Down {
+  /* .drop-Down {
     font-size: smaller;
-  }
+  } */
 
   #card-parent {
     width: 270px;
@@ -127,9 +136,10 @@
     min-width: 100%;
   }
 
+  /* 
   .drop-Down {
     font-size: 0.7rem;
-  }
+  } */
 
   #card-parent {
     width: 330px;
@@ -146,9 +156,9 @@
     min-width: 100%;
   }
 
-  .drop-Down {
+  /* .drop-Down {
     font-size: 0.5rem;
-  }
+  } */
 
   #card-parent {
     width: 330px;
