@@ -74,9 +74,9 @@ const Body = ({ tasks, onEditTask, onDeleteTask }) => {
       <div className="filter-dropdown">
         <label className='Filter-select' htmlFor="filter-select" style={{ fontFamily: 'Oswald, sans-serif' }} >Filter:  </label>
         <select className="drop-Down" id="filter-select" value={filterOption} onChange={(e) => handleFilterChange(e.target.value)}>
-          <option style={{ fontSize: '0.7rem' }} className="drop-Down" value="All"  >All</option>
-          <option style={{ fontSize: '0.7rem' }} className="drop-Down" value="Completed"  >Completed</option>
-          <option style={{ fontSize: '0.7rem' }} className="drop-Down" value="Not Completed"  >Not Completed</option>
+          <option className="drop-Down" value="All"  >All</option>
+          <option className="drop-Down" value="Completed"  >Completed</option>
+          <option className="drop-Down" value="Not Completed"  >Not Completed</option>
         </select>
       </div>
       <div className='parent-container'>
@@ -90,8 +90,8 @@ const Body = ({ tasks, onEditTask, onDeleteTask }) => {
               <div className='Dorpdwn-container'>
                 <span  >Status :</span> <span>
                   <select style={{ fontFamily: 'Oswald, sans-serif', backgroundColor: 'lightblue' }} value={taskStatuses[index] || 'Not Completed'} onChange={(e) => handleStatusChange(index, e.target.value)}>
-                    <option style={{ fontSize: '0.7rem' }} className="drop-Down" value="Completed"  >Completed</option>
-                    <option style={{ fontSize: '0.7rem' }} className="drop-Down" value="Not Completed"  >Not Completed</option>
+                    <option className="drop-Down" value="Completed"  >Completed</option>
+                    <option className="drop-Down" value="Not Completed"  >Not Completed</option>
                   </select>
                 </span>
               </div>

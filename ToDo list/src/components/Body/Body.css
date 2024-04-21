@@ -128,17 +128,12 @@
   }
 
   .drop-Down {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   #card-parent {
     width: 330px;
     height: 230px;
     font-size: 1rem;
-  }
-
-  .btn {
-    width: 25%;
-    font-size: smaller;
   }
 }
